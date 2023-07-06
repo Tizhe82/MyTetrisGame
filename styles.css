@@ -1,0 +1,141 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 500px 400px 400px;
+    Justify-items: center;
+
+  }
+
+  .stats-bar {
+    text-align: center;
+  }
+
+
+
+  canvas {
+    background-color: #eee;
+  }
+
+  body {
+    background-image: url('images/pawel-czerwinski-2m4P67xWDww-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  kbd {
+    background-color: #eee;
+    border-radius: 2px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 4px 6px;
+    white-space: nowrap;
+}
+
+  .game-board {
+    border: solid 2px;
+  }
+
+
+  .play-button {
+    font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.play-button:focus {
+  text-decoration: none;
+}
+
+.play-button:hover {
+  text-decoration: none;
+}
+
+.play-button:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.play-button:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .play-button {
+    padding: 12px 50px;
+  }
+}
+
+
+
+.music-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.music-button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .music-button {
+    padding: 0.25em 0.75em;
+  }
+}

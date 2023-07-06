@@ -1,19 +1,67 @@
 <!DOCTYPE html>
-<html lang= "en">
+<html lang="en">
 <head>
-  <title>Tetris Game Build</title>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <link rel="stylesheet" href="style.css">
+  <title>MY TETRIS</title>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
 <body>
+  <div class="grid">
+    <div class="right-column">
+        <div class="stats-bar">
+            <img src="images/logo-removebg-preview.png" alt="game logo" class="transparent">
+            <p>Score: <span id="score">0</span></p>
+            <p>Lines: <span id="lines">0</span></p>
+            <p>Level: <span id="level">0</span></p><br>
+            <div class="pieces">
+               <p class="piece-next">Next: </p>
+               <canvas id="next" class="transparent"></canvas>
 
-<canvas width="320" height="640" id="game"></canvas>
-<script src="my_tetris.js"></script>
+               <p class="piece-next">Hold: </p>
+               <canvas id="hold" class="transparent"></canvas>
+            </div>
+        </div>
+    </div>
+      <canvas id="board" class="game-board"></canvas>
+      <div class="left-column">
+        <div>
+            <h3>Game controls</h3>
+            <p><kbd><span>&#x2192;</span></kbd> Move right</p>
+            <p><kbd><span>&#x2190;</span></kbd> Move left</p>
+            <p><kbd><span>&#x2191;</span></kbd> Rotate right</p>
+            <p><kbd>Q</kbd> Rotate right</p>
+            <p><kbd><span>&#x2193;</span></kbd> soft drop</p>
+            <p><kbd>SPACE</kbd> Hard drop</p>
+            <p><kbd>P</kbd> Pause</p>
+            <p><kbd>C</kbd> Hold piece</p>
+        </div>
 
+        <div class="buttons">
+            <audio id="audio">
+                <source src="audio/JFbrBXk6vJG_Original-Tetris-theme-Tetris-Soundtrack-.mp3" type="audio/mpeg">
+            </audio>
+            <button onclick="play()" class="play-button">Play</button>
+            <button onclick="playMusic()" class="music-button" id="music-button">On/Off music</button>
+          </div>
+      </div>
+  </div>
+
+  <script type="text/javascript" src="audio.js"></script>
+  <script type="text/javascript" src="constants.js"></script>
+  <script type="text/javascript" src="board.js"></script>
+  <script type="text/javascript" src="tetromino.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
+<footer class="footer mt-3">
+    <div class="container">
+        <span class="text-muted footer">
+
+          </span>
+    </div>
+</footer>
 </html>
